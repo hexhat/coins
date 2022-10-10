@@ -1,0 +1,14 @@
+- Move this file to Issues?
+- Create option for querying symbol/id
+- Symbol/id collisions not handling
+- Add tests coverage (phpunit and xdebug) (try codecov.io?)
+- Id list limit (`Connect`)?
+- Refactor `getTotal()`
+- Add `--test` flag for fixture's config
+- Implement sorting as `-s, --sort=value  sort report: amount (how many), cost ($), user (file)`
+- Setup phar and mpm
+- Manual testing setup in Live Arch
+- Refactor switch to `in_array`
+- Try to fix linter phpstan level 8
+- Add inline env var support (for locale and currency)
+- intl-free behavior

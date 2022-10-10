@@ -1,0 +1,42 @@
+{
+  "name": "hexhat/coins",
+  "bin": ["bin/coins"],
+  "type": "project",
+  "authors": [
+    {
+      "name": "Alexey Makhnev",
+      "email": "alexey@makhnev.org"
+    }
+  ],
+  "description": "Your total cryptocurrency wealth",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "test": "phpunit tests"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hexhat\\Coins\\": "src/Classes",
+      "Hexhat\\Coins\\Tests\\": "tests"
+    },
+    "files": [
+      "src/Library.php"
+    ]
+  },
+  "require-dev": {
+    "psy/psysh": "^0.11.8",
+    "phpstan/phpstan-phpunit": "^1.1",
+    "phpstan/extension-installer": "^1.1",
+    "symfony/var-dumper": "^6.1",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-intl": "^8.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
+  }
+}
